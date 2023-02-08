@@ -25,3 +25,19 @@ for(let i=0; i<10; i++){
   console.log(Number.parseInt(Math.random()*1000+1));
 }
 
+
+// 1.pow
+
+console.log(Math.pow(2,3));
+console.log(2**3);
+
+
+// 2.sqrt
+console.log(Math.sqrt(4));
+console.log(Math.sqrt(2));
+
+
+// round, ceil,floor
+console.log(Math.round(3.5));
+console.log(Math.round(-2.3));
+console.log(Math.round(-2.7));
