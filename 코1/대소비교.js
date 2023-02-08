@@ -2,9 +2,9 @@ function answer(x,y){
 
 
   if(x>y){
-    return "<"
-  }else if(y>x){
     return ">"
+  }else if(y>x){
+    return "<"
   }else if(x==y){
     return "="
   }
