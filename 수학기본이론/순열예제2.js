@@ -23,6 +23,19 @@ function parmutation(arr,s,r){
     [arr[s],arr[i]]=[arr[i],arr[s]]  //원상복귀
   }
 
+  /*
+  i=0  s=0 ,r=2
+  [a]
+  s+1=   s=1
+  [a,b]
+  s=2 r=2 
+  [a,b,c]
+
+
+  s=1 r=2 i=2 [a,b,c]
+
+  */
+
 }
 
 parmutation(input,0,2);
