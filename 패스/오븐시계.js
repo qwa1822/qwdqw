@@ -10,8 +10,9 @@ function Solution(a,b,c){
     if(a<0){
       a=23;
     }
+  }else{
+    
   }
-  return b
 }
 
 console.log(Solution(14,30,20));
