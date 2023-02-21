@@ -1,24 +1,26 @@
-function Solution(arr){ 
- let count=0;
 
- for(let x of arr){
-  if(x===isGroup(x).join('')) count++;
+function Solution(str){
 
- }
-
-
- function isGroup(str){
-  let newArray=[];
-  for(let i=0; i<str.length; i++){
-    if(!newArray.includes(str[i])) newArray.push(str[i]);
-    if(str[i-1]===str[i]) newArray.push(str[i]);
+  let count=0;
+  for(let x of str){
+    if(x===isGroup(x).join("")) count++;
   }
-  return newArray;
- 
- }
 
- console.log(count);
+
+  function isGroup(str){
+    let newarr=[];
+    for(let i=0; i<str.length; i++){
+      if(!newarr.includes(str[i])) newarr.push(str[i]);
+      if(str[i-1]===str[i]) newarr.push(str[i]);
+    }
+
+    return newarr;
+    
+  }
+  console.log(count);
 
 }
 
-Solution(['aba','abab','abcabc','a'])
+
+console.log(Solution(['hello','new','year']));
+console.log(Solution(['aba','abab','abcabc','a']));
