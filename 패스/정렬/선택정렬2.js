@@ -2,7 +2,9 @@
 // 선택 정렬의 수행 시간 측정*/
 // 0부터 999까지의 정수 30000개를 담은 배열 생성
 
+
 function selectionSort(arr){
+  
 
   for(let i=0; i<arr.length; i++){
     let start=i;
@@ -14,11 +16,8 @@ function selectionSort(arr){
     let temp=arr[i];
     arr[i]=arr[start];
     arr[start]=temp;
-    
   }
-  return arr;
 }
-
 
 
 let arr=Array.from({length:30000},()=>Math.floor(Math.random()*1000));
