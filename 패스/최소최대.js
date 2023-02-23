@@ -12,6 +12,15 @@ function Solution(a){
   console.log(minValue+" "+MaxValue);
 }
 
+function Solution2(a){
+
+
+  for(let i=0; i<a.length; i++){
+    
+  }
+
+}
+
 
 
 console.log(Solution([10,20,30,40,50]));

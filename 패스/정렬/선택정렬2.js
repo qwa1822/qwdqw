@@ -40,3 +40,5 @@ endTIme=new Date().getTime();
 
 
 console.log(`정렬된 배열에 대한 선택 정렬 소요시간:`,endTIme-startTime,"ms");
+
+

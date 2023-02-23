@@ -23,4 +23,4 @@ function Solution(str){
 
 
 console.log(Solution(['hello','new','year']));
-console.log(Solution(['aba','abab','abcabc','a']));
+console.log(Solution(['aba','abab','abcabc','a']));  

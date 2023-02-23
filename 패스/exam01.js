@@ -2,9 +2,16 @@ let fs=require('fs');
 let input=fs.readFileSync('/dev/stdin').toString().split('\n');
 
 
-let line=input[0].split(' ');
 
-let a=parseInt(line[0]);
-let b=parseInt(line[1]);
+let a=input[0]
+let b=input[1];
 
-console.log(a+b);
+
+x_1=b[2]; //일의자리
+x_2=b[1]; //십의자리
+x_3=b[0]; //백의 자리
+
+console.log(Number(a)*Number(x_1));
+console.log(Number(a)*Number(x_2));
+console.log(Number(a)*Number(x_3));
+console.log(Number(a)*Number(b));
