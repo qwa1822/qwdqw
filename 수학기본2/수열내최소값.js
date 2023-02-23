@@ -1,20 +1,34 @@
 function Solution(arr){
 
-  let min=Number.MIN_SAFE_INTEGER;
-  let result=[];
 
+
+  let result=[];
+  // 최소값의 위치
+  let min=Number.MAX_SAFE_INTEGER;
+  for(let i=0; i<arr.length; i++){
+    if(min>arr[i]){
+      min=arr[i];
+    }
+
+
+  
+  }
+
+  console.log(min);
+
+
+
+
+  // index위치
   let count=0;
   for(let i=0; i<arr.length; i++){
-    for(let j=1; j<arr.length;j++){
-        if(arr[i]<arr[j]){
-          count=j;
-
-          result.push(count);
-        }
+    if(arr[i]===min){
+      result[count++]=i;
     }
   }
 
   return result;
+
 }
 
 
