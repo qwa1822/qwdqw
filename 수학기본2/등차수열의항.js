@@ -14,7 +14,10 @@ function Solution(a,d,n){
    let index=-1;
 
   if((n-a)%d==0){  //등차수열의 값이구나
-    index=(n-a)/d+1;
+    index=(n-a)/d+1;  //찾으려는값 -a를통해서 나온데이터를d 를 나누면
+    //몇번쨰만큼 떨어져있는지를 알수있다.
+    //그항에 index를 찾을수있다 for문없이도.
+
 
   }else index=-1;
 
