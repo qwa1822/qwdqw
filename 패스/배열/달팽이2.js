@@ -138,8 +138,8 @@ const snail3=array=>{
     array.slice(1,array.length-1).map(row=>row[row.length-1]),
     array.length>1?array[array.length-1].reverse():[],
     array.slice(1,array.length-1).reverse().map(row=>row[0]),
-    
-  ]
+    middle.length>0? snail(middle):[]
+  ].flat();
 }
 
 
